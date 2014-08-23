@@ -1,0 +1,54 @@
+#!/usr/bin/env ruby
+
+require File.expand_path('../../lib/aws-reporting', __FILE__)
+
+slop = Slop.new(:strict => true) do
+  command 'config' do
+    banner "Usage: aws-reporting config [-h] [-f] [--access-key-id ACCESS_KEY_ID --secret-access-key SECRET_ACCESS_KEY]"
+    on 'h', 'help', "Show this messages"
+    on 'f', 'force', "Force output config file"
+    on 'access-key-id=', "AWS Access Key ID"
+    on 'secret-access-key=', "AWS Secret Access Key"
+
+    run do |opts, args|
+      AwsReporting::Command::Config.run(opts, args) 
+    end
+  end
+
+  command 'run' do
+    banner "Usage: aws-reporting run [-f] REPORT_PATH"
+    on 'h', 'help', "Show this messages"
+    on 'f', 'force', "Force output report"
+
+    run do |opts, args|
+      AwsReporting::Command::Run.run(opts, args) 
+    end
+  end
+
+  command 'serve' do
+    banner "Usage: aws-reporting serve [-p PORT] REPORT_PATH"
+    on 'h', 'help', "Show this messages"
+    on 'p=', 'port=', 'Port to listen on'
+
+    run do |opts, args|
+      AwsReporting::Command::Serve.run(opts, args) 
+    end
+  end
+
+  command 'version' do
+    run do |opts, args|
+      AwsReporting::Command::Version.run(opts, args) 
+    end
+  end
+
+  run do |opts, args|
+    puts opts.help
+  end
+end
+
+begin
+  slop.parse
+rescue Slop::Error => e
+  puts e.message
+  puts slop
+end

@@ -1,0 +1,1127 @@
+---
+- namespace: AWS/AutoScaling
+  metric_name: GroupDesiredCapacity
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/AutoScaling
+  metric_name: GroupInServiceInstances
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/AutoScaling
+  metric_name: GroupMaxSize
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/AutoScaling
+  metric_name: GroupMinSize
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/AutoScaling
+  metric_name: GroupPendingInstances
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/AutoScaling
+  metric_name: GroupTerminatingInstances
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/AutoScaling
+  metric_name: GroupTotalInstances
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/Billing
+  metric_name: EstimatedCharges
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/DynamoDB
+  metric_name: ConsumedReadCapacityUnits
+  statistics:
+  - Sum
+- namespace: AWS/DynamoDB
+  metric_name: ProvisionedReadCapacityUnits
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/DynamoDB
+  metric_name: ProvisionedWriteCapacityUnits
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/DynamoDB
+  metric_name: ReadThrottleEvents
+  statistics:
+  - Sum
+- namespace: AWS/DynamoDB
+  metric_name: ReturnedItemCount
+  statistics:
+  - Sum
+- namespace: AWS/DynamoDB
+  metric_name: SuccessfulRequestLatency
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/DynamoDB
+  metric_name: SystemErrors
+  statistics:
+  - Sum
+- namespace: AWS/DynamoDB
+  metric_name: ThrottledRequests
+  statistics:
+  - Sum
+- namespace: AWS/DynamoDB
+  metric_name: UserErrors
+  statistics:
+  - Sum
+- namespace: AWS/DynamoDB
+  metric_name: WriteThrottleEvents
+  statistics:
+  - Sum
+- namespace: AWS/EBS
+  metric_name: VolumeConsumedReadWriteOps
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/EBS
+  metric_name: VolumeIdleTime
+  statistics:
+  - Sum
+- namespace: AWS/EBS
+  metric_name: VolumeQueueLength
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/EBS
+  metric_name: VolumeReadBytes
+  statistics:
+  - Sum
+- namespace: AWS/EBS
+  metric_name: VolumeReadOps
+  statistics:
+  - Sum
+- namespace: AWS/EBS
+  metric_name: VolumeThroughputPercentage
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/EBS
+  metric_name: VolumeTotalReadTime
+  statistics:
+  - Sum
+- namespace: AWS/EBS
+  metric_name: VolumeTotalWriteTime
+  statistics:
+  - Sum
+- namespace: AWS/EBS
+  metric_name: VolumeWriteBytes
+  statistics:
+  - Sum
+- namespace: AWS/EBS
+  metric_name: VolumeWriteOps
+  statistics:
+  - Sum
+- namespace: AWS/EC2
+  metric_name: CPUCreditBalance
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/EC2
+  metric_name: CPUCreditUsage
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/EC2
+  metric_name: CPUUtilization
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/EC2
+  metric_name: DiskReadBytes
+  statistics:
+  - Sum
+- namespace: AWS/EC2
+  metric_name: DiskReadOps
+  statistics:
+  - Sum
+- namespace: AWS/EC2
+  metric_name: DiskWriteBytes
+  statistics:
+  - Sum
+- namespace: AWS/EC2
+  metric_name: DiskWriteOps
+  statistics:
+  - Sum
+- namespace: AWS/EC2
+  metric_name: NetworkIn
+  statistics:
+  - Sum
+- namespace: AWS/EC2
+  metric_name: NetworkOut
+  statistics:
+  - Sum
+- namespace: AWS/EC2
+  metric_name: StatusCheckFailed_Instance
+  statistics:
+  - Sum
+- namespace: AWS/EC2
+  metric_name: StatusCheckFailed
+  statistics:
+  - Sum
+- namespace: AWS/EC2
+  metric_name: StatusCheckFailed_System
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: BytesReadIntoMemcached
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: BytesUsedForCache
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElastiCache
+  metric_name: BytesUsedForCacheItems
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElastiCache
+  metric_name: BytesUsedForHash
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElastiCache
+  metric_name: BytesWrittenOutFromMemcached
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: CacheHits
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: CacheMisses
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: CasBadval
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: CasHits
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: CasMisses
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: CmdConfigGet
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: CmdConfigSet
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: CmdFlush
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: CmdGet
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: CmdSet
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: CmdTouch
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: CPUUtilization
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElastiCache
+  metric_name: CurrConfig
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElastiCache
+  metric_name: CurrConnections
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElastiCache
+  metric_name: CurrItems
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElastiCache
+  metric_name: DecrHits
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: DecrMisses
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: DeleteHits
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: DeleteMisses
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: EvictedUnfetched
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: Evictions
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElastiCache
+  metric_name: Evictions
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: ExpiredUnfetched
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: FreeableMemory
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElastiCache
+  metric_name: GetHits
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: GetMisses
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: GetTypeCmds
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: HashBasedCmds
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: IncrHits
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: IncrMisses
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: KeyBasedCmds
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: ListBasedCmds
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: NetworkBytesIn
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElastiCache
+  metric_name: NetworkBytesOut
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElastiCache
+  metric_name: NewConnections
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElastiCache
+  metric_name: NewConnections
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: NewItems
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: Reclaimed
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElastiCache
+  metric_name: Reclaimed
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: ReplicationLag
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElastiCache
+  metric_name: SetBasedCmds
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: SetTypeCmds
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: SlabsMoved
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: SortedSetBasedCmds
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: StringBasedCmds
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: SwapUsage
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElastiCache
+  metric_name: TouchHits
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: TouchMisses
+  statistics:
+  - Sum
+- namespace: AWS/ElastiCache
+  metric_name: UnusedMemory
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElasticMapReduce
+  metric_name: CoreNodesPending
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElasticMapReduce
+  metric_name: CoreNodesRunning
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElasticMapReduce
+  metric_name: HbaseBackupFailed
+  statistics:
+  - Sum
+- namespace: AWS/ElasticMapReduce
+  metric_name: HbaseMostRecentBackupDuration
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElasticMapReduce
+  metric_name: HbaseTimeSinceLastSuccessfulBackup
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElasticMapReduce
+  metric_name: HDFSBytesRead
+  statistics:
+  - Sum
+- namespace: AWS/ElasticMapReduce
+  metric_name: HDFSBytesWritten
+  statistics:
+  - Sum
+- namespace: AWS/ElasticMapReduce
+  metric_name: HDFSUtilization
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElasticMapReduce
+  metric_name: IsIdle
+  statistics:
+  - Sum
+- namespace: AWS/ElasticMapReduce
+  metric_name: JobsFailed
+  statistics:
+  - Sum
+- namespace: AWS/ElasticMapReduce
+  metric_name: JobsRunning
+  statistics:
+  - Sum
+- namespace: AWS/ElasticMapReduce
+  metric_name: LiveDataNodes
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElasticMapReduce
+  metric_name: LiveTaskTrackers
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElasticMapReduce
+  metric_name: MapSlotsOpen
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElasticMapReduce
+  metric_name: MissingBlocks
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElasticMapReduce
+  metric_name: ReduceSlotsOpen
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElasticMapReduce
+  metric_name: RemainingMapTasks
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElasticMapReduce
+  metric_name: RemainingMapTasksPerSlot
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElasticMapReduce
+  metric_name: RemainingReduceTasks
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElasticMapReduce
+  metric_name: RunningMapTasks
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElasticMapReduce
+  metric_name: RunningReduceTasks
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElasticMapReduce
+  metric_name: S3BytesRead
+  statistics:
+  - Sum
+- namespace: AWS/ElasticMapReduce
+  metric_name: S3BytesWritten
+  statistics:
+  - Sum
+- namespace: AWS/ElasticMapReduce
+  metric_name: TaskNodesPending
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElasticMapReduce
+  metric_name: TaskNodesRunning
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ElasticMapReduce
+  metric_name: TotalLoad
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ELB
+  metric_name: BackendConnectionErrors
+  statistics:
+  - Sum
+- namespace: AWS/ELB
+  metric_name: HealthyHostCount
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ELB
+  metric_name: HTTPCode_Backend_2XX
+  statistics:
+  - Sum
+- namespace: AWS/ELB
+  metric_name: HTTPCode_Backend_3XX
+  statistics:
+  - Sum
+- namespace: AWS/ELB
+  metric_name: HTTPCode_Backend_4XX
+  statistics:
+  - Sum
+- namespace: AWS/ELB
+  metric_name: HTTPCode_Backend_5XX
+  statistics:
+  - Sum
+- namespace: AWS/ELB
+  metric_name: HTTPCode_ELB_4XX
+  statistics:
+  - Sum
+- namespace: AWS/ELB
+  metric_name: HTTPCode_ELB_5XX
+  statistics:
+  - Sum
+- namespace: AWS/ELB
+  metric_name: Latency
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ELB
+  metric_name: RequestCount
+  statistics:
+  - Sum
+- namespace: AWS/ELB
+  metric_name: SpilloverCount
+  statistics:
+  - Sum
+- namespace: AWS/ELB
+  metric_name: SurgeQueueLength
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/ELB
+  metric_name: UnHealthyHostCount
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/OpsWorks
+  metric_name: cpu_idle
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/OpsWorks
+  metric_name: cpu_nice
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/OpsWorks
+  metric_name: cpu_system
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/OpsWorks
+  metric_name: cpu_user
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/OpsWorks
+  metric_name: cpu_waitio
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/OpsWorks
+  metric_name: Load_15
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/OpsWorks
+  metric_name: Load_1
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/OpsWorks
+  metric_name: Load_5
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/OpsWorks
+  metric_name: memory_buffers
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/OpsWorks
+  metric_name: memory_cached
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/OpsWorks
+  metric_name: memory_free
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/OpsWorks
+  metric_name: memory_swap
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/OpsWorks
+  metric_name: memory_total
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/OpsWorks
+  metric_name: memory_used
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/OpsWorks
+  metric_name: procs
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/RDS
+  metric_name: BinLogDiskUsage
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/RDS
+  metric_name: CPUUtilization
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/RDS
+  metric_name: DatabaseConnections
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/RDS
+  metric_name: DiskQueueDepth
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/RDS
+  metric_name: FreeableMemory
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/RDS
+  metric_name: FreeStorageSpace
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/RDS
+  metric_name: NetworkReceiveThroughput
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/RDS
+  metric_name: NetworkTransmitThroughput
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/RDS
+  metric_name: ReadIOPS
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/RDS
+  metric_name: ReadLatency
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/RDS
+  metric_name: ReadThroughput
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/RDS
+  metric_name: ReplicaLag
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/RDS
+  metric_name: SwapUsage
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/RDS
+  metric_name: WriteIOPS
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/RDS
+  metric_name: WriteLatency
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/RDS
+  metric_name: WriteThroughput
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/Redshift
+  metric_name: CPUUtilization
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/Redshift
+  metric_name: DatabaseConnections
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/Redshift
+  metric_name: HealthStatus
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/Redshift
+  metric_name: MaintenanceMode
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/Redshift
+  metric_name: NetworkReceiveThroughput
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/Redshift
+  metric_name: NetworkTransmitThroughput
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/Redshift
+  metric_name: PercentageDiskSpaceUsed
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/Redshift
+  metric_name: ReadIOPS
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/Redshift
+  metric_name: ReadLatency
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/Redshift
+  metric_name: ReadThroughput
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/Redshift
+  metric_name: WriteIOPS
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/Redshift
+  metric_name: WriteLatency
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/Redshift
+  metric_name: WriteThroughput
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/Route53
+  metric_name: HealthCheckStatus
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/SNS
+  metric_name: NumberOfMessagesPublished
+  statistics:
+  - Sum
+- namespace: AWS/SNS
+  metric_name: NumberOfNotificationsDelivered
+  statistics:
+  - Sum
+- namespace: AWS/SNS
+  metric_name: NumberOfNotificationsFailed
+  statistics:
+  - Sum
+- namespace: AWS/SNS
+  metric_name: PublishSize
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/SQS
+  metric_name: ApproximateNumberOfMessagesDelayed
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/SQS
+  metric_name: ApproximateNumberOfMessagesNotVisible
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/SQS
+  metric_name: ApproximateNumberOfMessagesVisible
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/SQS
+  metric_name: NumberOfEmptyReceives
+  statistics:
+  - Sum
+- namespace: AWS/SQS
+  metric_name: NumberOfMessagesDeleted
+  statistics:
+  - Sum
+- namespace: AWS/SQS
+  metric_name: NumberOfMessagesReceived
+  statistics:
+  - Sum
+- namespace: AWS/SQS
+  metric_name: NumberOfMessagesSent
+  statistics:
+  - Sum
+- namespace: AWS/SQS
+  metric_name: SentMessageSize
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/StorageGateway
+  metric_name: CacheHitPercent
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/StorageGateway
+  metric_name: CachePercentDirty
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/StorageGateway
+  metric_name: CachePercentUsed
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/StorageGateway
+  metric_name: CloudBytesDownloaded
+  statistics:
+  - Sum
+- namespace: AWS/StorageGateway
+  metric_name: CloudBytesUploaded
+  statistics:
+  - Sum
+- namespace: AWS/StorageGateway
+  metric_name: CloudDownloadLatency
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/StorageGateway
+  metric_name: QueuedWrites
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/StorageGateway
+  metric_name: ReadBytes
+  statistics:
+  - Sum
+- namespace: AWS/StorageGateway
+  metric_name: ReadTime
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/StorageGateway
+  metric_name: TotalCacheSize
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/StorageGateway
+  metric_name: UploadBufferFree
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/StorageGateway
+  metric_name: UploadBufferPercentUsed
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/StorageGateway
+  metric_name: UploadBufferUsed
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/StorageGateway
+  metric_name: WorkingStorageFree
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/StorageGateway
+  metric_name: WorkingStoragePercentageUsed
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/StorageGateway
+  metric_name: WorkingStoragePercentUsed
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/StorageGateway
+  metric_name: WorkingStorageUsed
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/StorageGateway
+  metric_name: WriteBytes
+  statistics:
+  - Sum
+- namespace: AWS/StorageGateway
+  metric_name: WriteTime
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/SWF
+  metric_name: DecisionTaskScheduleToStartTime
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/SWF
+  metric_name: DecisionTasksCompleted
+  statistics:
+  - Sum
+- namespace: AWS/SWF
+  metric_name: DecisionTaskStartToCloseTime
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/SWF
+  metric_name: StartedDecisionTasksTimedOutOnClose
+  statistics:
+  - Sum
+- namespace: AWS/SWF
+  metric_name: WorkflowsCanceled
+  statistics:
+  - Sum
+- namespace: AWS/SWF
+  metric_name: WorkflowsCompleted
+  statistics:
+  - Sum
+- namespace: AWS/SWF
+  metric_name: WorkflowsContinuedAsNew
+  statistics:
+  - Sum
+- namespace: AWS/SWF
+  metric_name: WorkflowsFailed
+  statistics:
+  - Sum
+- namespace: AWS/SWF
+  metric_name: WorkflowStartToCloseTime
+  statistics:
+  - Maximum
+  - Minimum
+  - Average
+- namespace: AWS/SWF
+  metric_name: WorkflowsTerminated
+  statistics:
+  - Sum
+- namespace: AWS/SWF
+  metric_name: WorkflowsTimedOut
+  statistics:
+  - Sum
