@@ -13,9 +13,22 @@ module AwsReporting
               :status => get_status(alarm)}
     end
 
+    def alarmed?(history)
+      return false unless history.history_item_type == 'StateUpdate'
+
+      data = JSON.parse(history.history_data)
+      if data["oldState"]["stateValue"] == 'INSUFFICIENT_DATA' and data["newState"]["stateValue"] == 'OK'
+        false
+      elsif data["oldState"]["stateValue"] == 'OK' and data["newState"]["stateValue"] == 'INSUFFICIENT_DATA'
+        false
+      else
+        true
+      end
+    end
+
     def get_status(alarm)
       return :ALARM if alarm.state_value == 'ALARM'
-      return :ALARM if alarm.history_items.to_a.select{|history| history.history_item_type == 'StateUpdate'}.length > 0
+      return :ALARM if alarm.history_items.to_a.select{|history| alarmed?(history)}.length > 0
       return :OK
     end
 
@@ -31,6 +44,6 @@ module AwsReporting
       alarms.sort_by{|alarm| [alarm[:namespace], serialize(alarm[:dimensions]), alarm[:metric_name], alarm[:name]].join(' ')}
     end
 
-    module_function :get_alarms
+    module_function :get_alarms, :get_alarm_info, :get_status, :serialize, :alarmed?
   end
 end

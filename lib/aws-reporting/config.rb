@@ -7,7 +7,7 @@ module AwsReporting
     def self.load()
       @@config = YAML.load(open(config_file_path()){|f| f.read})
     rescue
-      raise AwsReporting::ConfigFileLoadError.new
+      raise AwsReporting::Error::ConfigFileLoadError.new
     end
 
     def self.update_region(region)

@@ -88,10 +88,12 @@ a{
 }
 
 #header{
+  height:45px;
   background-color:#111111;
   margin:1em 0em 1em 0em;
   padding:1em;
   font: 12px sans-serif;
+  position:relative;
 }
 
 #navigation{
@@ -143,10 +145,6 @@ h1{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
 }
 
-#header a{
-  color:#fff;
-}
-
 h2{
   font: 14px sans-serif;
   background: #111111;
@@ -184,4 +182,28 @@ h3{
 .state-ok{
   color:#699e00;
   font-weight:bold;  
+}
+
+#logo{
+  width:200px;
+  float:left;
+}
+
+#logo a img{
+  border-bottom-style:solid;
+  border-bottom-color:#111111;
+  border-bottom-width:3px;
+  padding-bottom:5px;
+}
+
+#logo a:hover img{
+  border-bottom-style:solid;
+  border-bottom-color:#33b5e5;
+  border-bottom-width:3px;
+  padding-bottom:5px;
+}
+
+#github{
+  margin-left:210px;
+  text-align:right;
 }

@@ -9,7 +9,7 @@ module AwsReporting
             return
           end
 
-          port = opts['port'] || 12345
+          port = opts['port'] || 23456
           raise AwsReporting::Error::CommandArgumentError.new unless args.length == 1
           path = args[0]
 
