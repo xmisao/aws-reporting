@@ -32,7 +32,7 @@ aws-reporting config
 
 ### Generating Report
 
-Run `aws-reporting run` command, AWS-Reporting fetches data from Amazon CloudWatch, and saves report as HTML to `/path/to/file`.
+Run `aws-reporting run` command, AWS-Reporting fetches data from Amazon CloudWatch, and saves report as HTML to `/path/to/report`.
 
 ~~~~
 aws-reporting run /path/to/report
@@ -40,7 +40,7 @@ aws-reporting run /path/to/report
 
 ### Serve Report locally
 
-If you use Fiefox, you can open a report directory without a HTTP server.
+If you use Fiefox, you can open a report directly without a HTTP server.
 For other browsers, AWS-Reporting includes a HTTP server.
 
 Run `aws-reporting serve` command, serve report locally.
@@ -78,4 +78,4 @@ server {
 
 ## License
 
-This library is distributed under the MIT license.
+This software is distributed under the MIT license.
