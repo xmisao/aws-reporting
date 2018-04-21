@@ -1,6 +1,6 @@
 # AWS-Reporting
 
-![AWS Reporting](http://aws-reporting.xmisao.com/logo.png)
+![AWS Reporting](https://xmisao.github.io/aws-reporting/logo.png)
 
 ## Introduction
 
@@ -8,11 +8,11 @@ AWS-Reporting is AWS performance reporting tool.
 
 AWS-Reporting fetches data from Amazon CloudWatch, and generates awesome HTML report like this:
 
-![Screenshot](http://aws-reporting.xmisao.com/screenshot.png)
+![Screenshot](https://xmisao.github.io/aws-reporting/screenshot.png)
 
 ## Demo
 
-A sample report is here: [http://aws-reporting.xmisao.com/demo/](http://aws-reporting.xmisao.com/demo/)
+A sample report is here: [https://xmisao.github.io/aws-reporting/demo/](https://xmisao.github.io/aws-reporting/demo/)
 
 ## Installation
 
